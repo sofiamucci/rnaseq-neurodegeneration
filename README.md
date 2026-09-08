@@ -54,6 +54,3 @@ RColorBrewer, org.Hs.eg.db, clusterProfiler, pROC, httr, readr, shiny, DT
 ## License
 MIT — see [LICENSE](./LICENSE)
 
-## Interactive Explorer
-Explore the differential expression results interactively: 
-[neurodegeneration-de-explorer](https://sofiamucci.shinyapps.io/neurodegeneration-de-explorer/)
