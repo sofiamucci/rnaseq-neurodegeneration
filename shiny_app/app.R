@@ -3,14 +3,9 @@ library(DT)
 library(ggplot2)
 library(dplyr)
 
-# --- Load data ---
-# Paths are relative to the repo root, not shiny_app/ — run this app with
-# the working directory set to the repo root (e.g. via RStudio Project)
-res_table_sig <- readRDS("../data/res_table_sig.rds")
-res_data <- readRDS("../data/res_data.rds")
+# Load data (plain data.frame, no DESeq2 dependency needed)
+res_table <- readRDS("data/res_table_full.rds")
 
-res_table <- as.data.frame(res_data)
-res_table <- tibble::rownames_to_column(res_table, "gene_id")
 
 # ============================================================
 # UI
