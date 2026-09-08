@@ -33,7 +33,7 @@ significance thresholds and browse the results table live:
 ├── shiny_app/ # interactive Shiny app (self-contained)
 
 
-VER ## Pipeline
+## Pipeline
 1. `scripts/01_download_data.R` — retrieve counts via recount3
 2. `scripts/02_qc.R` — DESeq2 object, filtering, normalization, PCA, shrinkage
 3. `scripts/03_volcano_plot.R` — results table, gene symbol mapping, volcano plot
