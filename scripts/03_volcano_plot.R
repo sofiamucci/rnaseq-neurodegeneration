@@ -38,6 +38,9 @@ res_table <- res_table %>%
 
 table(res_table$Expression)
 
+# Save significant genes table for 04_heatmap.R
+saveRDS(res_table_sig, "data/res_table_sig.rds")
+
 # Map gene symbols for the top significant genes (for plot labels)
 top_genes <- res_table %>%
   filter(Expression != "Unchanged") %>%
